@@ -19,7 +19,7 @@ public class Movement : MonoBehaviour
     public float wallJumpLockTime = 0.1f;
 
     private Rigidbody2D rb;
-    private BoxCollider2D boxCollider;
+    private CapsuleCollider2D capsuleCollider;
     private bool isGrounded;
     private bool isJumping;
     private bool isFalling;
@@ -41,7 +41,7 @@ public class Movement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        boxCollider = GetComponent<BoxCollider2D>();
+        capsuleCollider = GetComponent<CapsuleCollider2D>();
         animator = GetComponent<Animator>();
     }
 
@@ -74,7 +74,7 @@ public class Movement : MonoBehaviour
         else if (moveInput < 0 && isFacingRight) Flip();
 
         isGrounded = Physics2D.
-            BoxCast(boxCollider.bounds.center, boxCollider.bounds.size * new Vector2(0.9f, 1f),
+            BoxCast(capsuleCollider.bounds.center, capsuleCollider.bounds.size * new Vector2(0.9f, 1f),
                     0f, Vector2.down, 0.2f, groundLayer);
 
         if (isGrounded)
