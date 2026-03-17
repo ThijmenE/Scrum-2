@@ -479,9 +479,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 534717934}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49cbf057e2739ce4885afee4a7e27193, type: 3}
+  m_Script: {fileID: 11500000, guid: c52603bded2fbe64e9445c9918bac8c6, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerCollisions
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerCollision
   animator: {fileID: 534717936}
   spriteRenderer: {fileID: 534717939}
   rigidBody: {fileID: 534717938}
