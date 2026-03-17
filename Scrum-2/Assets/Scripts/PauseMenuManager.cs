@@ -14,6 +14,10 @@ public class PauseMenuController : MonoBehaviour
     private VisualElement _PauseMenuPanel;
     private List<Button> _PauseMenuPanelButtons = new List<Button>();
 
+    public GameObject player;
+    public GameObject camera;
+    public GameObject canvas;
+
     private void Awake()
     {
         var root = GetComponent<UIDocument>().rootVisualElement;
@@ -29,10 +33,11 @@ public class PauseMenuController : MonoBehaviour
 
         _ContinueButton = _PauseMenuPanel.Q<Button>("ContinueButton");
         AddPanelButton(_PauseMenuPanel, _PauseMenuPanelButtons, "ContinueButton", ContinueButtonClicked);
+        AddPanelButton(_PauseMenuPanel, _PauseMenuPanelButtons, "EditButton", EditButtonClicked);
         AddPanelButton(_PauseMenuPanel, _PauseMenuPanelButtons, "MenuButton", MenuButtonClicked);
     }
 
-        private void Start()
+    private void Start()
     {
         Time.timeScale = 1f;
     }
@@ -83,8 +88,19 @@ public class PauseMenuController : MonoBehaviour
     private void ContinueButtonClicked()
     {
         HidePanel(_PauseMenuPanel, _PauseMenuPanelButtons);
+        player.SetActive(true);
+        canvas.SetActive(false);
+        camera.SetActive(false);
         Time.timeScale = 1;
     }
 
+    private void EditButtonClicked()
+    {
+        HidePanel(_PauseMenuPanel, _PauseMenuPanelButtons);
+        player.SetActive(false);
+        canvas.SetActive(true);
+        camera.SetActive(true);
+        Time.timeScale = 1;
+    }
     private void MenuButtonClicked() => SceneManager.LoadScene("Menu");
 }
