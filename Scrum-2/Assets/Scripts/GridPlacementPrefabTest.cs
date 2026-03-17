@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 
-public class GridPlacementPrefabTest : MonoBehaviour
+public class GridPlacement : MonoBehaviour
 {
     public Tilemap tilemap;
     public Tile[] tiles;
