@@ -88,6 +88,16 @@ public class GridPlacement : MonoBehaviour
             selectedTile = 8;
             RenderUITiles();
         }
+        else if (Input.GetKeyDown(KeyCode.Alpha0))
+        {
+            selectedTile = 9;
+            RenderUITiles();
+        }
+        else if (Input.GetKeyDown(KeyCode.E))
+        {
+            selectedTile = 10;
+            RenderUITiles();
+        }
 
         if (Input.GetMouseButtonDown(0))
         {
