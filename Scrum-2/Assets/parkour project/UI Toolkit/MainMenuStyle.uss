@@ -34,8 +34,9 @@
 .label {
     align-self: flex-end;
     top: 1%;
-    right: 1%;
+    right: auto;
     -unity-font-definition: url("project://database/Assets/parkour%20project/UI/Font/Materials/ThaleahFat_TTF.ttf?fileID=12800000&guid=585188cdc4600544eb408bee749e4b3a&type=3#ThaleahFat_TTF");
     font-size: 50px;
     position: absolute;
+    background-color: rgb(76, 76, 76);
 }
