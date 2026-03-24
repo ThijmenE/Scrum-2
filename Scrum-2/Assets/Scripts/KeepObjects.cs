@@ -13,7 +13,10 @@ public class KeepObjects : MonoBehaviour
     {
         keepThisObject = this;
         DontDestroyOnLoad(gameObject);
-        winSceneTime = GameObject.Find("WinScene Time").GetComponent<Canvas>();
+        if (canvas == true)
+        {
+            winSceneTime = GameObject.Find("WinScene Time").GetComponent<Canvas>();
+        }
     }
 
     private void Update()

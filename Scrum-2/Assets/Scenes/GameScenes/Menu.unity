@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 1054540238}
   - component: {fileID: 1054540237}
   - component: {fileID: 1054540240}
+  - component: {fileID: 1054540241}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -288,6 +289,18 @@ MonoBehaviour:
   _levelsButtonTemplate: {fileID: 9197481963319205126, guid: 1992300a2f35a5c40b80e3e23890d247, type: 3}
   _settingsPanelTemplate: {fileID: 9197481963319205126, guid: b89656050f5fd7d4cbab1655da8be688, type: 3}
   BackGroundMusic: {fileID: 1391828563}
+--- !u!114 &1054540241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054540235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d009bddbfa34f644ab3d50abd10bcf99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DestroyDontDestroy
 --- !u!1 &1391828562
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,6 +311,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1391828564}
   - component: {fileID: 1391828563}
+  - component: {fileID: 1391828565}
   m_Layer: 0
   m_Name: Background Music
   m_TagString: Untagged
@@ -417,6 +431,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1391828565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391828562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48bdae2c3b70adb499e0bb80ddce00ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeepObjects
+  canvas: 0
 --- !u!1 &1570334960
 GameObject:
   m_ObjectHideFlags: 0
