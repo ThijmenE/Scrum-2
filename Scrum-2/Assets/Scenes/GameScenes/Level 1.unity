@@ -7701,7 +7701,7 @@ MonoBehaviour:
   _ContinueButtonTemplate: {fileID: 9197481963319205126, guid: 88989f790d6ba374780626b8a3d68eaf, type: 3}
   player: {fileID: 627144314}
   camera: {fileID: 584087026}
-  canvas: {fileID: 0}
+  canvas: {fileID: 816837787}
 --- !u!114 &1837489939
 MonoBehaviour:
   m_ObjectHideFlags: 0
