@@ -15,6 +15,8 @@ public class PlayerCollision : MonoBehaviour
 
     private float halfHeight;
     public AudioSource enemyKill;
+        public Transform teleportTarget;
+    public GameObject player;
 
     private void Start()
     {
@@ -55,7 +57,7 @@ public class PlayerCollision : MonoBehaviour
             }
             else if (contact.normal.y < 0.5f)
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                player.transform.position = teleportTarget.position;
             }
         }
     }
