@@ -19,8 +19,8 @@ public class Movement : MonoBehaviour
     public float wallJumpLockTime = 0.1f;
 
     private Rigidbody2D rb;
-    private CapsuleCollider2D capsuleCollider;
-    public bool isGrounded;
+    private BoxCollider2D BoxCollider;
+    private bool isGrounded;
     private bool isJumping;
     private bool isFalling;
     private float jumpTimeCounter;
@@ -41,7 +41,7 @@ public class Movement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        capsuleCollider = GetComponent<CapsuleCollider2D>();
+        BoxCollider = GetComponent<BoxCollider2D>();
         animator = GetComponent<Animator>();
     }
 
@@ -74,7 +74,7 @@ public class Movement : MonoBehaviour
         else if (moveInput < 0 && isFacingRight) Flip();
 
         isGrounded = Physics2D.
-            BoxCast(capsuleCollider.bounds.center, capsuleCollider.bounds.size * new Vector2(0.9f, 1f),
+            BoxCast(BoxCollider.bounds.center, BoxCollider.bounds.size * new Vector2(0.9f, 1f),
                     0f, Vector2.down, 0.2f, groundLayer);
 
         if (isGrounded)
@@ -182,9 +182,10 @@ public class Movement : MonoBehaviour
             wallJumpingCounter -= Time.deltaTime;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && wallJumpingCounter > 0f)
+        if (Input.GetKeyDown(KeyCode.Space) && wallJumpingCounter > 0f && isWallSliding == true)
         {
             isWallJumping = true;
+            animator.SetBool("isWallSliding", false);
 
             rb.linearVelocity = new Vector2(
                 wallJumpingDirection * wallJumpingPower.x,
@@ -208,6 +209,7 @@ public class Movement : MonoBehaviour
 
     private void StopWallJumping()
     {
+        animator.SetBool("isWallSliding", false);
         isWallJumping = false;
     }
 
