@@ -20,7 +20,7 @@ public class Movement : MonoBehaviour
 
     private Rigidbody2D rb;
     private CapsuleCollider2D capsuleCollider;
-    private bool isGrounded;
+    public bool isGrounded;
     private bool isJumping;
     private bool isFalling;
     private float jumpTimeCounter;
@@ -113,7 +113,7 @@ public class Movement : MonoBehaviour
             isJumping = false;
         }
 
-        if (!isGrounded && rb.linearVelocity.y < 0)
+        if (!isGrounded && rb.linearVelocity.y <= 0)
         {
             isFalling = true;
             isJumping = false;
@@ -121,6 +121,13 @@ public class Movement : MonoBehaviour
             animator.SetBool("isJumping", false);
         }
 
+        if (!isGrounded && rb.linearVelocity.y > 0)
+        {
+            isFalling = false;
+            isJumping = true;
+            animator.SetBool("isFalling", false);
+            animator.SetBool("isJumping", true);
+        }
         WallSlide(moveInput);
         WallJump();
     }
