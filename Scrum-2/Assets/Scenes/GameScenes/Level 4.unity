@@ -1190,7 +1190,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Restart
   teleportTarget: {fileID: 565233780}
-  player: {fileID: 0}
+  player: {fileID: 583636215}
 --- !u!61 &474290038
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1465,6 +1465,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8570ae783c9a84438915caa22ffa3af, type: 3}
+--- !u!1 &583636215 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1629362056520672005, guid: a8570ae783c9a84438915caa22ffa3af, type: 3}
+  m_PrefabInstance: {fileID: 583636214}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &629302869
 GameObject:
   m_ObjectHideFlags: 0

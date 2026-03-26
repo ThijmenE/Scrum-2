@@ -910,6 +910,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8570ae783c9a84438915caa22ffa3af, type: 3}
+--- !u!1 &496953005 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1629362056520672005, guid: a8570ae783c9a84438915caa22ffa3af, type: 3}
+  m_PrefabInstance: {fileID: 496953004}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &497736035
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8032,7 +8037,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Restart
   teleportTarget: {fileID: 441573171}
-  player: {fileID: 0}
+  player: {fileID: 496953005}
 --- !u!61 &1810607187
 BoxCollider2D:
   m_ObjectHideFlags: 0
