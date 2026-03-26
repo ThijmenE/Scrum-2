@@ -6454,7 +6454,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1122759786}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -14940,7 +14940,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1898464592}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -15225,6 +15225,7 @@ MonoBehaviour:
   wallJumpingTime: 0.2
   wallJumpingDuration: 0.4
   wallJumpLockTime: 0.1
+  isGrounded: 0
   currentJumpCount: 0
   maxJumpCount: 1
   animator: {fileID: 2034330753}
