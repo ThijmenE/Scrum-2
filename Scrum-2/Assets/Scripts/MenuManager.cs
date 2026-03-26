@@ -131,7 +131,7 @@ public class MenuManager : MonoBehaviour
         _exitButton.style.display = DisplayStyle.Flex;
     }
 
-    private void TutorialButtonClicked() => SceneManager.LoadScene("Movement");
+    private void TutorialButtonClicked() => SceneManager.LoadScene("SandBox");
     private void LevelsButtonClicked() => ShowPanel(_levelsPanel, _levelsPanelButtons);
     private void SettingsButtonClicked() => ShowPanel(_settingsPanel, _settingsPanelButtons);
 

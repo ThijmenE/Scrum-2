@@ -99,13 +99,13 @@ public class GridPlacement : MonoBehaviour
             RenderUITiles();
         }
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0))
         {
             Vector3 position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             tilemap.SetTile(tilemap.WorldToCell(position), tiles[selectedTile]);
         }
 
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButton(1))
         {
             Vector3 position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             tilemap.SetTile(tilemap.WorldToCell(position), null);
