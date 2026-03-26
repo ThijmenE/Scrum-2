@@ -6011,7 +6011,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PauseMenuController
   _ContinueButtonTemplate: {fileID: 9197481963319205126, guid: 88989f790d6ba374780626b8a3d68eaf, type: 3}
-  player: {fileID: 0}
+  player: {fileID: 1962016038}
   camera: {fileID: 1956223788}
   canvas: {fileID: 2011246951}
 --- !u!114 &1202491393

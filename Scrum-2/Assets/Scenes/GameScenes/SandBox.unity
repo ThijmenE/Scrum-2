@@ -2182,7 +2182,7 @@ GameObject:
   - component: {fileID: 1949363508}
   - component: {fileID: 1949363507}
   m_Layer: 5
-  m_Name: UIDocument
+  m_Name: Pause
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2201,7 +2201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PauseMenuController
   _ContinueButtonTemplate: {fileID: 9197481963319205126, guid: 88989f790d6ba374780626b8a3d68eaf, type: 3}
-  player: {fileID: 0}
+  player: {fileID: 1355399427}
   camera: {fileID: 8439979684229864763}
   canvas: {fileID: 973228974}
 --- !u!114 &1949363508

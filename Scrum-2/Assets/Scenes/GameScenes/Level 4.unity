@@ -45769,7 +45769,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PauseMenuController
   _ContinueButtonTemplate: {fileID: 9197481963319205126, guid: 88989f790d6ba374780626b8a3d68eaf, type: 3}
-  player: {fileID: 0}
+  player: {fileID: 583636215}
   camera: {fileID: 834615908}
   canvas: {fileID: 339505379}
 --- !u!114 &2074663950
