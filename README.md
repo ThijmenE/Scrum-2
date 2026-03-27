@@ -17,5 +17,6 @@ use right mouse click to delete the block you are hovering over
 
 How do i play the game?
 
-Download and unzip the zip folder in the project.
-Search for Scrum-2.exe and open it.
+open and download the game build folder.
+launch the scrum-2.EXE.
+have fun!
